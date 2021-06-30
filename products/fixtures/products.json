@@ -1,0 +1,32 @@
+         "image":"3080wk.png"
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002440521",
+         "name":"Workstation PC w/ RTX 3070",
+         "description":"A mid level workstation PC with an RTX3070 GPU, Ryzen 7 3800x 8 core CPU, 1TB Samsung Evo SSD, 32GB of DDR4 3200MHz RAM, all packed onto an Asus B450M Extreme motherboard",
+         "price":899.99,
+         "category":2,
+         "rating":7.5,
+         "image_url":"https://www.pcspecialist.ie/images/cases/12734/h.png?21590",
+         "image":"3070wk.png"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002601115",
+         "name": "Workstation PC w/ RTX 3060ti",
+         "description":"An entry-level workstation PC with an RTX3060ti GPU, Ryzen 5 3500xt 6 core CPU, 500gb Samsung Evo SSD, 32GB of DDR4 3200MHz RAM, all packed onto an Asus B450M Extreme motherboard",
+         "price":599.99,
+         "category":2,
+         "rating":7,
+         "image_url":"https://www.pcspecialist.ie/images/cases/12928/h.png?21590",
+         "image":"3060wk.png"
+      }
+   }
+],
