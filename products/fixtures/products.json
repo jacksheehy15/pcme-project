@@ -1,3 +1,85 @@
+[
+   {
+      "pk":1,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001340155",
+         "name":"Gaming PC w/ RTX3090",
+         "description":"A flagship water cooled gaming PC with the GeForce RTX3090 GPU, AMD Ryzen 9 5950x 12 core CPU, 32GB og DDR4 3600Mhz RAM, 2TB Samsung Evo SSD, all packed onto an Asus ROG Maximus motherboard",
+         "price":1999.99,
+         "category":1,
+         "rating":10,
+         "image_url":"https://www.pcspecialist.ie/images/products/15026/1.png?21590",
+         "image":"3090.png"
+      }
+   },
+   {
+      "pk":2,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600425",
+         "name":"Gaming PC w/ RTX3080",
+         "description":"A more affordable top tier air cooled gaming PC with the GeForce RTX3080 GPU, AMD Ryzen 7 5800 8 core CPU, 32GB og DDR4 3400Mhz RAM, 1TB Samsung Evo SSD, all packed onto an Asus ROG Maximus motherboard",
+         "price":1199.99,
+         "category":1,
+         "rating":8.5,
+         "image_url":"https://www.pcspecialist.ie/images/cases/12263/h.png?21590",
+         "image":"3080.png"
+      }
+   },
+   {
+      "pk":3,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001730010",
+         "name":"Gaming PC w/ RX 6800 XT",
+         "description":"A high end water cooled all AMD Gaming PC, consisting of an RX 6800XT GPU, AMD Ryzen 7 5800x 8 core CPU, 32GB of DDR4 3600MHz RAM, 1TB Samsung Evo SSD, all packed onto an Asus B450m motherboard",
+         "price":999.99,
+         "category":1,
+         "rating":7.5,
+         "image_url":"https://www.pcspecialist.ie/images/cases/15186/h.png?21590",
+         "image":"6800xt.png"
+      }
+   },
+   {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001890157",
+         "name":"Gaming PC w/ RX 5700 XT",
+         "description":"An entry level gaming PC with an AMD RX5700XT GPU ,Intel Core i7 6 core CPU, 16GB of DDR4 3200MHz RAM, 500GB Samsung Evo SSD, all packed onto an Asus B450H motherboard",
+         "price":699.99,
+         "category":1,
+         "rating":7,
+         "image_url":"https://www.pcspecialist.ie/images/cases/12263/h.png?21590",
+         "image":"5700xt.png"
+      }
+   },
+   {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002111605",
+         "name":"Workstation PC w/ RTX3090",
+         "description":"Our biggest and best PC in stock. A flagship water cooled workstation PC with an RTX3090 GPU, AMD Threadripper 64 core CPU, 5TB Samsung Evo SSD, 128GB of DDR4 4000MHz RAM, all packed onto an Asus ROG Maximus XIII Hero ",
+         "price":2999.99,
+         "category":2,
+         "rating":10,
+         "image_url":"https://www.pcspecialist.ie/images/cases/13215/h.png?21590",
+         "image":"3090wk.png"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002260206",
+         "name":"Workstation PC w/ RTX3080",
+         "description":"A top tier watercooled workstation PC with an RTX3080 GPU, Intel Core i9-10900k 12 core CPU, 1TB Samsung Evo SSD, 64GB of DDR4 3200MHz RAM, all packed onto an Asus B450M Extreme motherboard",
+         "price":1499.99,
+         "category":2,
+         "rating":9,
+         "image_url":"https://www.pcspecialist.ie/images/cases/8665/h.png?21590",
          "image":"3080wk.png"
       }
    },
@@ -20,7 +102,7 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5002601115",
-         "name": "Workstation PC w/ RTX 3060ti",
+         "name":"Workstation PC w/ RTX 3060ti",
          "description":"An entry-level workstation PC with an RTX3060ti GPU, Ryzen 5 3500xt 6 core CPU, 500gb Samsung Evo SSD, 32GB of DDR4 3200MHz RAM, all packed onto an Asus B450M Extreme motherboard",
          "price":599.99,
          "category":2,
@@ -29,4 +111,4 @@
          "image":"3060wk.png"
       }
    }
-],
+]
