@@ -47,7 +47,7 @@
     <header class="container-fluid fixed-top bg-dark">
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+                <h4 class="logo-font my-1">Free delivery when you spend €{{ free_delivery_threshold }}!</h4>
             </div>
         </div>
         <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
@@ -90,7 +90,7 @@
                             <a href="" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Create Account</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
@@ -150,7 +150,7 @@
             <div class="card-footer text-muted text-light">
                 <h5 class="text-light">
                 © 2021 Copyright:
-                <a class="text-reset fw-bold" href="index.html">PCme.com</a></h5>
+                <a class="text-reset fw-bold" href="{% url 'home' %}">PCme.com</a></h5>
             </div>
         </div>
     </footer>
