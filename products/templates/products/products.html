@@ -46,13 +46,10 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
-                                        </div>
-                                        <p>
                                             {% if product.category %}
-                                                <small class="text-muted" style="text-transform: capitalize;"><i class="fas fa-info mr-1 align-text-bottom"></i>{{ product.category }}</small>
-                                            
+                                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.category }}</small>
                                             {% endif %}
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
