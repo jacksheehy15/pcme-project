@@ -1,10 +1,19 @@
-<div class="collapse navbar-collapse home-nav-banner" id="main-nav">
+<div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item ">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"  aria-haspopup="true" aria-expanded="false">
-                PC's
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
             </a>
-        </li>
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All PC's
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                    <a href="{% url 'products' %}?sort=category&direction=workstations" class="dropdown-item ">Gaming</a>
+                    <a href="{% url 'products' %}?sort=category&direction=workstations" class="dropdown-item ">Workstations</a>
+                    <a href="{% url 'products' %}" class="dropdown-item">All PC's</a>
+                </div>
+            </li>
 
         <li class="nav-item ">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"  aria-haspopup="true" aria-expanded="false">
