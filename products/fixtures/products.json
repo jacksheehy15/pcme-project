@@ -1,16 +1,6 @@
 [
    {
-      "pk":2,
-      "model":"products.product",
-      "fields":{
-         "sku":"pp5001600425",
-         "name":"Gaming PC w/ RTX3080",
-         "description":"A more affordable top tier air cooled gaming PC with the GeForce RTX3080 GPU, AMD Ryzen 7 5800 8 core CPU, 32GB og DDR4 3400Mhz RAM, 1TB Samsung Evo SSD, all packed onto an Asus ROG Maximus motherboard",
-         "price":1199.99,
-         "category":1,
-         "rating":8.5,
-         "image_url":"https://www.pcspecialist.ie/images/cases/12263/h.png?21590",
-         "image":"3080.png"
+      /
       }
    },
    {
