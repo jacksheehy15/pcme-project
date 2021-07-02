@@ -1,16 +1,16 @@
 [
    {
-      "pk":1,
+      "pk":2,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001340155",
-         "name":"Gaming PC w/ RTX3090",
-         "description":"A flagship water cooled gaming PC with the GeForce RTX3090 GPU, AMD Ryzen 9 5950x 12 core CPU, 32GB og DDR4 3600Mhz RAM, 2TB Samsung Evo SSD, all packed onto an Asus ROG Maximus motherboard",
-         "price":1999.99,
+         "sku":"pp5001600425",
+         "name":"Gaming PC w/ RTX3080",
+         "description":"A more affordable top tier air cooled gaming PC with the GeForce RTX3080 GPU, AMD Ryzen 7 5800 8 core CPU, 32GB og DDR4 3400Mhz RAM, 1TB Samsung Evo SSD, all packed onto an Asus ROG Maximus motherboard",
+         "price":1199.99,
          "category":1,
-         "rating":10,
-         "image_url":"https://www.pcspecialist.ie/images/products/15026/1.png?21590",
-         "image":"3090v2.png"
+         "rating":8.5,
+         "image_url":"https://www.pcspecialist.ie/images/cases/12263/h.png?21590",
+         "image":"3080.png"
       }
    },
    {
