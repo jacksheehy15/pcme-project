@@ -12,6 +12,10 @@ body {
     font-family: Quicksand;   
 }
 
+.navigation {
+    background: url('/media/logo.png');
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -124,8 +128,4 @@ ul {
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
-}
-
-.top-button:hover {
-    color: red;
 }

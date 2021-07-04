@@ -5,4 +5,4 @@ from django.shortcuts import render
 def view_cart(request):
     """ A view that renders the shopping cart contents """
 
-    return render(request, 'view_cart/cart.html')
+    return render(request, 'cart/cart.html')
