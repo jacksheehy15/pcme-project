@@ -44,16 +44,16 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top bg-dark">
+    <header class="container-fluid fixed-top bg-secondary">
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
                 <h4 class="logo-font my-1">Free delivery when you spend €{{ free_delivery_threshold }}!</h4>
             </div>
         </div>
-        <div id="topnav" class="row bg-dark pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row bg-secondary pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-light my-0 align-middle"><strong>PC</strong><span
+                    <h2 class="logo-font text-warning my-0 align-middle"><strong>PC</strong><span
                             style="text-transform:lowercase">me</span></h2>
                 </a>
             </div>
@@ -77,8 +77,8 @@
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0 text-light">My Account</p>
+                                <div><i class="fas fa-user-circle fa-lg text-dark"></i></div>
+                                <p class="my-0 text-warning">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -95,11 +95,11 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-dark{% endif %} nav-link"
                             href="">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0 text-light">
+                                <div><i class="fas fa-shopping-cart fa-lg text-dark"></i></div>
+                                <p class="my-0 text-warning">
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -139,17 +139,17 @@
     {% block postloadjs %}
     {% endblock %}
     
-    <footer class="page-footer p1 bg-dark">
-        <div class="card text-center  bg-dark">
+    <footer class="page-footer p1 bg-secondary row">
+        <div class="card text-center  bg-secondary">
             <div class="card-body ">
-                <a class="text-light fw-bold" href="{% url 'products' %}">PC's</a><br>
-                <a class="text-light fw-bold" href="#">Contact</a><br>
-                <a class="text-light fw-bold" href="#">About Us</a>
+                <a class="text-warning w-bold" href="{% url 'products' %}">PC's</a><br>
+                <a class="text-warning w-bold" href="#">Contact</a><br>
+                <a class="text-warning fw-bold" href="#">About Us</a>
             </div>
             <div class="card-footer text-muted text-light">
-                <h5 class="text-light">
+                <h5 class="text-warning">
                 © 2021 Copyright:
-                <a class="text-reset fw-bold" href="{% url 'home' %}">PCme.com</a></h5>
+                <a class="text-warning fw-bold" href="{% url 'home' %}">PCme.com</a></h5>
             </div>
         </div>
     </footer>

@@ -86,6 +86,20 @@ ul {
   list-style-type: none;
 }
 
+/* Button CSS */
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link{
+    cursor: pointer;
+}
+
+
 /* Products Page Work */
 .overlay {
     height: 100%;
@@ -105,4 +119,13 @@ ul {
     body {
         height: calc(100vh - 116px);
     }
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.top-button:hover {
+    color: red;
 }
