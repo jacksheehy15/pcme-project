@@ -27,14 +27,14 @@
     {% block corejs %}
     <script src="https://kit.fontawesome.com/4863a75fd6.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     {% endblock %}
 
     {% block extra_js %}
@@ -100,7 +100,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control  rounded-3 bg-dark" type="text" name="q" placeholder="Search...">
+                        <input class="form-control text-light rounded-3 bg-dark" type="text" name="q"
+                            placeholder="Search...">
                         <div class="input-group-append">
                             <button class="form-control btn btn-dark border rounded-3" type="submit">
                                 <span class="icon">
@@ -139,24 +140,36 @@
 
     {% block postloadjs %}
     {% endblock %}
-    
+
     <div class="container-fluid" style="padding: 0%;">
 
-    <footer class="page-footer p1 bg-secondary">
-        <div class="card text-center  bg-secondary">
-            <div class="card-body ">
-                <a class="text-warning w-bold" href="{% url 'products' %}">PC's</a><br>
-                <a class="text-warning w-bold" href="#">Contact</a><br>
-                <a class="text-warning fw-bold" href="#">About Us</a>
+        <footer class="page-footer p1 bg-secondary">
+            <div class="card text-center  bg-secondary">
+                <div class="card-body ">
+                    <a class="text-warning w-bold" href="{% url 'products' %}">PC's</a><br>
+                    <a class="text-warning w-bold" href="#">Contact</a><br>
+                    <a class="text-warning fw-bold" href="#">About Us</a>
+                </div>
+                <div class="card-footer text-muted text-light">
+                    <h5 class="text-warning">
+                        © 2021 Copyright:
+                        <a class="text-warning fw-bold" href="{% url 'home' %}">PCme.com</a></h5>
+                </div>
             </div>
-            <div class="card-footer text-muted text-light">
-                <h5 class="text-warning">
-                © 2021 Copyright:
-                <a class="text-warning fw-bold" href="{% url 'home' %}">PCme.com</a></h5>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+<!-- Back to top button -->
+<div class="btt-button shadow-sm rounded-0 ">
+    <a class="btt-link d-flex h-100">
+        <i class=" fa-2x fas fa-hand-point-up text-warning mx-auto my-auto"></i>
+    </a>
 </div>
-    </body>
-    
-    </html>
+</body>
+
+</html>
+<!-- Back to top button JS -->
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
