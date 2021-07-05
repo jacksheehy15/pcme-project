@@ -44,6 +44,21 @@ body {
     color: white;
 }
 
+.btn-outliine-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.btn-outliine-black:hover,
+.btn-outliine-black:active,
+.btn-outliine-black:focus {
+    background: black;
+    color: white !important;
+}
+
+
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
