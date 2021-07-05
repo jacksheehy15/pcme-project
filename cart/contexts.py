@@ -2,7 +2,7 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
-
+from django.shortcuts import redirect
 
 def cart_contents(request):
 
