@@ -65,7 +65,15 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #e0d463;
+    color: white;
+}
+
+
+.btt-button:hover,
+.btt-button:active,
+.btt-button:focus {
+    background: #94938b;
     color: white;
 }
 
