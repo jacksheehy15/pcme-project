@@ -59,17 +59,6 @@ body {
 
 
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #e0d463;
-    color: white;
-}
-
-
 .btt-button:hover,
 .btt-button:active,
 .btt-button:focus {

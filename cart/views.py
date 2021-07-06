@@ -38,4 +38,4 @@ def adjust_cart(request, item_id):
         cart.pop(item_id)
 
     request.session["cart"] = cart
-    return (redirect("cart"))
+    return (redirect("view_cart"))
