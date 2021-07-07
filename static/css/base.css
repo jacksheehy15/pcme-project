@@ -44,27 +44,22 @@ body {
     color: white;
 }
 
-.btn-outliine-black {
+.btn-outline-black {
     background: white;
     color: black !important;
     border: 1px solid black;
 }
 
-.btn-outliine-black:hover,
-.btn-outliine-black:active,
-.btn-outliine-black:focus {
-    background: black;
+.btn-outline-black:hover,
+.btn-outiine-black:active,
+.btn-outline-black:focus {
+    background: #f0ad4e;
     color: white !important;
 }
 
 
 
-.btt-button:hover,
-.btt-button:active,
-.btt-button:focus {
-    background: #94938b;
-    color: white;
-}
+
 
 .text-black {
     color: #000 !important;
@@ -144,24 +139,18 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #909;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #909;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #909;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #909;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #909;
+/* Toast Positioning */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999;
 }
 
-::placeholder { /* Most modern browsers support this now. */
-   color:    #909;
+.custom-toast {
+    overflow: hidden;
+}
+
+.toast-capper {
+    height: 2px;
 }
