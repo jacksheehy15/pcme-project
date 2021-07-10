@@ -108,6 +108,16 @@ ul {
   list-style-type: none;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""]{
+    color: #aab7c4 !important;
+    }
+
 /* Button CSS */
 .btt-button {
     height: 42px;
