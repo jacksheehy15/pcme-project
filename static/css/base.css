@@ -207,3 +207,21 @@ a.category-badge > span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.main-section {
+}
+@media(min-height:800px) {                        /* Target the screen height              */
+    .main-section {                                             /* This section comes before the footer */
+        padding-top:30px!important;             /* Add padding if needed to push things down to center */
+        height: calc(100vh - 264px);               /* the 264 included height of what came before the header     
+                                                                             and included the height of the footer */
+    }
+}
+​
+@media(min-height:1000px) {                        /* Target the screen height              */
+    .main-section {                                             /* This section comes before the footer */
+        padding-top:100px!important;             /* Add padding if needed to push things down to center */
+        height: calc(100vh - 264px);               /* the 264 included height of what came before the header     
+                                                                             and included the height of the footer */
+    }
+}
