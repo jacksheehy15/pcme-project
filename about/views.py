@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
 
-def profile(request):
-    """ Display a users profile """
+def about(request):
+    """ Display the About Us page """
 
-    template = 'profiles/profile.html'
+    template = 'about/about.html'
     context = {}
 
     return render(request, template, context)
