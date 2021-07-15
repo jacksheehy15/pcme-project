@@ -10,14 +10,11 @@ body {
     height: calc(100vh - 164px);
     color: #555555;
     font-family: Quicksand;   
+    
 }
 
-body {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/media/banner-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555555;
-    font-family: Quicksand;   
+.footer-gap {
+    padding-bottom: 110px;
 }
 
 .navigation {
