@@ -16,8 +16,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-d46&84%42&1n#^q*vp3wwf=wwl@-&_ip-ht@o$-n*m3+(boy=1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -171,6 +169,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STANDARD_DELIVERY_PERCENTAGE = 1
 FREE_DELIVERY_THRESHOLD = 600
 STRIPE_CURRENCY = 'eur'
+SECRET_KEY = os.getenv('SECRET_KEY')
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
