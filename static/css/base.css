@@ -10,25 +10,13 @@ body {
     height: calc(100vh - 164px);
     color: #555555;
     font-family: Quicksand;   
-    
-}
-
-.footer-gap {
-    padding-bottom: 110px;
 }
 
 .navigation {
     background: url('/media/logo.png');
-
-    
 }
 
-.footer {
-    bottom: 0;
-    position: absolute;
-  }
-
-/* from Bulma *taken from Boutiqe Ado MiniProject**/
+/* from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -56,22 +44,30 @@ body {
     color: white;
 }
 
-.btn-outline-black {
+.btn-outliine-black {
     background: white;
     color: black !important;
     border: 1px solid black;
 }
 
-.btn-outline-black:hover,
-.btn-outiine-black:active,
-.btn-outline-black:focus {
-    background: #f0ad4e;
+.btn-outliine-black:hover,
+.btn-outliine-black:active,
+.btn-outliine-black:focus {
+    background: black;
     color: white !important;
 }
 
 
 
-
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
 
 .text-black {
     color: #000 !important;
@@ -81,7 +77,7 @@ body {
     border: 1px solid black !important;
 }
 
-/* -------------------------------- Media Queries *taken from Boutiqe Ado MiniProject* */
+/* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -90,7 +86,7 @@ body {
   }
 }
 
-/* fixed top navbar only on medium and up *taken from Boutiqe Ado MiniProject* */
+/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -105,30 +101,9 @@ body {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-}
-
 ul {
   list-style-type: none;
 }
-
-select,
-select option {
-    color: #000000;
-}
-
-select:invalid,
-select option[value=""]{
-    color: #aab7c4 !important;
-    }
 
 /* Button CSS */
 .btt-button {
@@ -139,14 +114,12 @@ select option[value=""]{
     right: 10px;
 }
 
-.btt-link,
-.update-link,
-.remove-item{
+.btt-link{
     cursor: pointer;
 }
 
 
-/* Products Page Work *taken from Boutiqe Ado MiniProject* */
+/* Products Page Work */
 .overlay {
     height: 100%;
     width: 100%;
@@ -172,131 +145,4 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
-.my-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 0%;
-}
-/* Toast Positioning *taken from Boutiqe Ado MiniProject* */
-.message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999;
-}
 
-.custom-toast {
-    overflow: hidden;
-}
-
-.toast-capper {
-    height: 2px;
-}
-
-
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
-.arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 36px;
-}
-
-/* Convenience Classes - colors copied from Bootstrap *taken from Boutiqe Ado MiniProject* */
-
-.arrow-primary {
-    border-bottom-color: #007bff !important;
-}
-
-.arrow-secondary {
-    border-bottom-color: #6c757d !important;
-}
-
-.arrow-success {
-    border-bottom-color: #28a745 !important;
-}
-
-.arrow-danger {
-    border-bottom-color: #dc3545 !important;
-}
-
-.arrow-warning {
-    border-bottom-color: #ffc107 !important;
-}
-
-.arrow-info {
-    border-bottom-color: #17a2b8 !important;
-}
-
-.arrow-light {
-    border-bottom-color: #f8f9fa !important;
-}
-
-.arrow-dark {
-    border-bottom-color: #343a40 !important;
-}
-
-.cart-notification-wrapper {
-    height: 100px;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-/* Allauth Form Formatting */
-
-.allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
-}
-
-.allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
-}
-
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
-}
-
-.allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
-}
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #f0ad4e;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
-
-        /*  bootstrap button transitions */
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    }
-    
-    .allauth-form-inner-content button:hover,
-    .allauth-form-inner-content input[type='submit']:hover {	
-        color: #fff;
-        background-color: #f0ad4e;
-        border-color: #222;
-    }
-    
-    .allauth-form-inner-content a {
-        color: #17a2b8; /* text-info */
-    }
