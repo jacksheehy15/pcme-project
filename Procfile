@@ -1,1 +1,1 @@
-web: gunicorn pc_me.wsgi:application
+web: gunicorn pcme.wsgi:application
