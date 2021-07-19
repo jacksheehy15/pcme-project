@@ -125,19 +125,39 @@ The final pages I ended up with are very different because halfway through devel
 
  * [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Language used to add styling across all pages.
 
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Language used to create interactivity across the pages.
+ * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Language used to create interactivity across the pages.
+
+ * [Python](https://www.python.org/) - Language used to create the forms, views and urls for the site.
+
 
 ### Libraries, Frameworks and Editors
 
-* [Bootstrap 4.5.0](https://getbootstrap.com/) - used to create basic HTML layout and structure and using Bootstrap's CSS Framwework. The
-resposnsive grid system was utilised well.
+* [Django](https://www.djangoproject.com/) - Used as the main framework or the site.
 
-* [Google Fonts](https://fonts.google.com/) - was used to import the 'Roboto' and 'Noto Sans' fonts, that were used across all pages.
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to develop the forms on the site
 
-* [Font Awesome](https://fontawesome.com/) - was used for the social icons and the calender link found in the footer.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/decorators.html) - Used for user authentication across the site
+
+* [Stripe](https://www.stripe.com/) - Used as the main payment processor for the site
+
+* [Amazon Web Services](https://www.aws.com/) - S3 was used to store all static CSS and Javascript files, and images.
+
+* [SQLite3](https://www.sqlite.org/index.html) - The database that was used in production
+
+* [PostGres](https://www.postgresql.org/) -  is the database used by the deployed site.
 
 * [jQuery](https://jquery.com/) - was used in conjunction with Bootstrap to create the navbar collapse element, opacity of the navbar on the scroll
 of the page, and the modal pop up on submission of the contact form.
+* [Heroku](https://heroku.com) - The host for the PCme site
+
+* [Bootstrap 4](https://getbootstrap.com/) - used to create basic HTML layout and structure and using Bootstrap's CSS Framwework. The
+resposnsive grid system was utilised well.
+
+* [Google Fonts](https://fonts.google.com/) - was used to import the 'Quicksand' and 'Sans Serif' fonts, that were used across all pages.
+
+* [Font Awesome](https://fontawesome.com/) - was used for the social icons and the calender link found in the footer.
+
+
 
 * [EmailJS](https://www.emailjs.com/) - was used to send an email from JavaScript to my Gmail account.
 
@@ -155,13 +175,6 @@ of the page, and the modal pop up on submission of the contact form.
 * [Google](https://www.google.com/) - was used for researching various techniques, styles and information.
 
 * [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging.
-
-* [Google Maps](https://www.google.co.uk/maps) - used to grab the coordinates of locations and get details of locations -
-websites.
-
-* [Google Developers](https://developers.google.com/maps/documentation/?_ga=2.257569803.1237416838.1604925384-1643581518.1600963572) - used for
-reading and learning the documentation best advised by Google to implement Google Maps and Places API.
-
 * [Figma](https://www.figma.com/) - used for creating the wireframes in the design stage.
 
 
@@ -179,74 +192,64 @@ fashion.
 * [Free Online JS Formatter](https://www.freeformatter.com/javascript-beautifier.html) - used to format the JavaScript code in a neater and more
 organised fashion.
 
+* [Free Online Python Formatter](https://www.tutorialspoint.com/online_python_formatter.htm) - used to format the Python code in a neater and more
+organised fashion.
+
 ## **Features**
 
 #### Existing Features
 
-* Navbar - Featured across all pages. Site visitors can use the links on the left to navigate between all pages on the website. These links also
-collapse down into a hamburger icon at smaller screen sizes. The logo, found on the left, can be clicked on all pages to take users back to the
-home page. The navbar is also fixed, which enables the user to easily navigate between the pages of the website. The navbar starts off as transparent,
-and then becomes purple as the user scrolls to ensure it is always clear and legible.
+* Navbar - Featured across all pages. Site visitors can use the links on the on the navbar to navigate to home, PC's create account, login and signout.
 
-* Footer - Also featured across all pages. Users will find clickable social icons linking to the corresponding social media pages i.e facebook, twitter, tripadvisor, instagram.
-There is also a copyright section at the bottom of the footer.
+* Hamburger Menu - A hamburger menu appears on smaller devices such as phones and tablets whch drops down the navbar items.
 
-* Hero images -  These can be found across the three main pages (Home, Dingle, Contact, and provide a visual reference to what the user
-can expect to find and experience in Dingle.
+* Hero images -  This can be found on the home page. That image is off of [Google Images](https://images.google.com)
 
-* Home Page - This page showcases a hero image of the fihing port in Dingle as the hero image, then there is a featured section with image 
-and text based on the Dingle Food Festival and The Dinge Distillery, the two content sections also have links to a designaed website related to 
-the content and then this is followed by The footer.
+* Home Page - This page showcases  the hero image and a simple title stating "find the pc for your needs".
 
-* Experience Page - This page was created to help the user understand what Dingle has to offer. It makes use of Google Maps API, incorporating
-clickable buttons above the map to make the user interact with the map. On the click of each button, markers will drop on the map.
-When the user clicks on the marker a little information box will pop up, giving a litle rundwon of the location and a link to the designated website of said location. 
-I felt the user would be overwhelmed if the map presented them with every single resaurant and hotel in Dingle, so I used my extensive knowledge of Dingle to hand 
-pick 4 of the best restaurants and 4 of the best Hotels around and put them on the map.<br>
-I had a major issue in regards to the Google Maps API which took me quite some time to figure out but thanks to Stack Overflow and CI Tutors I got it working eventually.
+* Products Page - This page consists of the Gaming and Workstation PC's, in a row of 4. The user can then click on the desired PC which leads them to the products detail page. The products detail page gives the list of pc specs along with the price, rating and the option to add to the cart. I got the images for the PC' off of a website called PC Specialist, with the permission of the staff at PC Specialists I was allowed to use their images for my project. The user can sort between category, price, rating and A-Z in the dropdown sort menu.
 
-* Contact Page - This page provides a form users can fill out to contact the site. They can use this for general enquiries. Once the user submits
-the form, they will be presented with a modal pop up thanking them for their message and that they chould expect a response. 
-This provides the user with feedback that the query has gone through successfully. It is
-important to provide feedback to the user so they feel their actions have been validated.
+* When a user adds something to the cart or they edit, delete something a toast will appear at the top right of the screen telling them what they have
+done etc.
+
+* There is a shopping cart icon next to the user profile icon, this indicates the total of the cart at any time.
+
+* There is a search bar on the right side of the navbar also which the user can use to enter a query.
 
 * Back-to-Top Button - Each page contains a back-to-top button that will appear when the user scrolls to a set pixel height down the page, giving
-the user easier navigation around the pages and the site. 
+the user easier navigation around the pages and the site, this adds a nice bit of fluidity across the pages 
 
-* Favicon Icon - When the user loads the web pages, a favicon image of "EIRE" appears in the tab at the top next to the
-name of the site. I picked EIRE for this because I felt as if it was a nice personal touch because Eire is Irish for Ireland
+* Favicon Icon - When the user loads the web pages, a favicon image of "PC" is there in the browser bar. This is a simple logo and nothing extreme, it is simple.
  
  [Back to Top](#table-of-contents)
 #### Future Features
 
-* Gallery Page - A seperate page to showcase images of Dingle and visitors' experiences of the range of activities, drives, walks etc. on offer.
-This would give the user a more concrete idea of what to expect from a visit to Cornwall.
+* Review Page - A seperate page regarding the reviews of PC's and orders from verified customers.
 
-* Include more markers and information on the Google Map to give the user an even more extensive view of what Dingle has to offer.
+* An About Us PAge and Integrate a Google Map API to showcase where the PCme office is located.
 
-* On the scroll of the page, the hero image would zoom out.
+* I would like to have the opportunity to add more products than just PC's, maybe PC components and displays.
+
+* I would like to have a newsletter also, where the user can register through the site.
+
+* My favorite future feature would be integrating Google Pay to the site, as I am very fond of it myself as I use it in my day to day life.
 
 [Back to Top](#table-of-contents)
 
 ## **Testing**
 
-### **Testing User Stories:**
-- New user - *I am thinking of visiting Dingle and would like to get the information neccessary to visit* - 
-On the homepage, the user is met with a top-stuck navigation menu, containing **Home**, **Dingle** and **Contact**.
-There is then a picture of Dingle Harbor which teases Dingle is like to the new user.
-There is then images and text related to the Food Festival and Dingle Distillery..
-The footer at the bottom of the page consists of social media icons that the user can navigate through.
-The Dingle page would be the main point of interest for the user , as there is alot of tempting images and contnent to be found there like attractions and activities.
-The user can then navigate to the contact page where they will be greeted with a form and can get in contact with us regarding any questions they have.
+I had a severe lack of testing during my MS4, which I do regret now in the later stage.
+Info about my testing as follows:
 
+Knows Bugs and Fixes:
+* When I was integrating my Stripe WH key, I gave the wrong URL in the Stripe WH Endpoint section which would lead to an Error 403.
+To fix it I put the link as <br>
+://black-hawk-faqpfcy4.ws-eu11.gitpod.io/checkout/wh/ <br> prior to that I forgot the chekout/wh/ at the end.
+This is the error that it lead to - 
+[Error Snapshot](media/img1.png)
 
-Returning user - *I want to ask a question related to Dingle , because it is possible I will visit* - The user can easlily navigate to the **Contact** page where 
-they can submit a form with their quesion - or else , the user can navigate to the botom of the page where they can find our social media links and they can pursue in asking questions there.
-
-
-Business owner - *As the business owner I want to see a consistent style throughout the whole webpage* - The business owner can navigate throughout the website and they will notice that the navbars are consistent
-design The footers are consistent across all 4 pages also. The header font used is consistent across the site and the font used is consistent for all paragraphs. The site is a well balanced site in regards to colors, It is easy on
-they eyes and is nicely designed throughout.
+* When trying to sign in to my account, I got the following error [Error Snapshot](media/img2.png),
+which lead me to realise that I had 2 accounts with the same email, so to deal with that I deleted all accounts except the superuser and started again.
 
 [Back to Top](#table-of-contents)
 
@@ -254,6 +257,7 @@ they eyes and is nicely designed throughout.
 - **HTML** I validated the HTML with the [W3C Markup Validation Service](https://validator.w3.org/)
 - **CSS** I validated the CSS with the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - **JavaScript** I validated the JavaScript with the [Esprima Syntax Validator](https://esprima.org/demo/validate.html)
+- **Python** I validated the Python code with the [Free Online Python Formatter](https://www.tutorialspoint.com/online_python_formatter.htm)
 
 ### **Validation Results**
 #### **HTML**
@@ -271,6 +275,17 @@ they eyes and is nicely designed throughout.
 - No Errors Found
 #### **maps.js file**
 - No Errors Found
+### **Python**
+- No errors found, except in my checkout/views.py - 
+I had a type where the else: statement was typed as esle: which caused an error where the checkout would not load.
+
+```
+ else:
+        cart = request.session.get('cart', {})
+        if not cart:
+            messages.error(request, "There's nothing in your cart at the moment")
+            return redirect(reverse('products'))
+```
 
 ## **Testing on Different Browsers**
 I manually tested the website on the following browsers:
@@ -287,42 +302,173 @@ I also tested my website on my own persoanl devices: MacBook Pro 16", my desktop
 
 ## **Issues Found**
 
-- the one major issue I came across in my project developement is the Google Maps API, my API key was not working for my project so I had to get a new one which was fine and I had an issue where the map would not load 
-so I navigated to the Console in Chrome Developer Tools and I realized I was missing a few semi-colons, full stops and brackets and it worked for me then.
+- the one major issue I came across was on my MacBook , the mesage toasts would appear to the left side of the screen rather than the right, I fixed that with a simple "float right" class in the div container.
 
 
 ## **Deployment**
 This project was developed in GitPod and deployed to the hosting platform [GitHub Pages](https://pages.github.com/)
 
-### Host on GitHub Pages
+### Heroku Deployment with AWS:
 
-I took the following steps to deploy Visit Dingle to Github pages.
-- Searched GiHub in Chrome browser and signed in using my GitHub account.
-- Clicked on [My Repositories.](https://github.com/jacksheehy15?tab=repositories)
-- Navigated to [milestone-project-2.](https://github.com/jacksheehy15/milestone-project-2)
-- Selected [Settings.](https://github.com/jacksheehy15/milestone-project-2/settings)
-- Scrolles down to the GitHub Pages are of the page.
-- Selected 'Master Branch' from the 'source' dropdown menu.
-- Confirmed my selection.
-- Blasket Sound 2021 is now live on [GitHub Pages.](https://www.google.com/images)
+1. Install gunicorn, psycopg2-binary and dj-database-url using the PIP3 Install command.
+2. Freeze all the requirements for the project into a requirements.txt file using the pip3 freeze > requirements.txt command.
+3. Create a procfile, with the following inside it: web: gunicorn pc-me.wsgi:application.
+4. Push these changes to GitHub, using git add ., git commit -m and git push commands.
+5. Navigate to Heroku, and login or create an account.
+6. Once logged in, click on 'resources'.
+7. From the add-ons search bar, add the Heroku Postgres DB, select the free account, and then submit order form to add it to the project.
+8. From the app's dashboard, click on 'settings', and then 'reveal config vars' in order to set the necessary configuration variables for the project. It should look like this:
+![](media/configvars.PNG)
+9. Back on the main dashboard, click on 'deploy', and then under the 'Deployment' method section, select GitHub and 'Automatic Deploys'.
+10. Ensure that in settings.py, the following code is commented out:
 
-### Run your project locally
-- Have git installed.
-- Visit the [Repo.](https://github.com/jacksheehy15/milestone-project-2)
-- Click 'Clone or Download' and copy the code for http.
-- Open your chosen IDE (Cloud9, Vs Code etc.)
-- Open a terminal for your root directory.
-- Type 'git clone' followed by the code taken from the repository.
-- When you have completed all these steps, you have your own version of the website !
+``` 
+Database https://docs.djangoproject.com/en/3.1/ref/settings/#databases 
 
-The website can be run by opening one of the HTML files within a web browser.
+```
+ make sure to add the following code :
 
-Visit the link provided. Your website with any made changes will appear.
+ ``` 
+ DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))} 
+ 
+  ```
 
-Saved changes to the website will appear here after refreshing the page.
+11. Make migrations using the following command:
+```
+python3 manage.py makemigrations
+```
 
-The benefits of hosting your website on GitHub pages is that any pushed changes to your project will automatically update the website. Development branches can be created and merged to the master when complete. 
-It may take a moment for changes to appear on the hosted website.
+and migrate the database models to the Postgres database using the following command:
+```
+python3 manage.py migrate
+```
+
+12. Load the fixtures from the 'product_types.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. This is done by using the following command:
+```
+python3 manage.py loaddata <file name>
+```
+
+13. Create a new superuser:
+```
+python3 manage.py createsuperuser
+```
+
+14. Disable COLLECT_STATIC with the following code: 
+```
+heroku config:set DISABLE_COLLECTSTATIC=1 
+```
+
+15. Add to settings.py the following code:
+```
+ALLOWED_HOSTS = ['pcme-store.herokuapp.com', 'localhost']
+```
+
+16. Add Stripe environment variables to settings.py 
+```
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+```
+
+17. Push to heroku using the command:
+```
+git push heroku master
+```
+
+
+### Amazon Web Services
+All Static and media files for the deployed version of the site are hosted in a Amazon Web Services(AWS) S3 bucket
+
+1. In the gitpod terminal, install boto3 and django-storages using the following commands: 
+```
+pip3 install boto3 
+```
+```
+pip3 install django-storages
+```
+
+2. Freeze the new requirements into the 'requirements.txt' file using:
+```
+pip3 freeze > requirements.txt
+```
+
+3. Add 'storages' to INSTALLED_APPS in settings.py
+4. Add the following code to settings.py in order to link the Amazon Web Services bucket to the site:
+```
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'pcme-store'
+    AWS_S3_REGION_NAME = 'eu-west-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+
+5. Create a custom_storages.py file in the root level of the project. Inside it, include the locations of the Static Storage and Media Storage. 
+6. Delete DISABLE_COLLECTSTATIC from the Heroku Config Variables.
+7. Push to GitHub, and all changes should be automatically pushed to Heroku too. Set debug=False.
+
+#### Making a Local Clone
+
+In order to make a local clone of PCme website, enter
+```
+git clone https://github.com/jacksheehy15/pcme-project.git 
+```
+into the terminal.
+
+Create an env.py file in the root directory of the project and add it to the .gitignore file.
+The following code has to be added to the env.py file.
+```
+import os  
+os.environ["DEVELOPMENT"] = "True"    
+os.environ["SECRET_KEY"] = "<Your Secret Key>"
+os.environ["STRIPE_PUBLIC_KEY"] = "<Your Stripe Public Key>"    
+os.environ["STRIPE_SECRET_KEY"] = "<Your Stripe Secret Key>"    
+os.environ["STRIPE_WH_SECRET"] = "<Your Stripe WH Secret Key>"   
+
+```
+
+Then make sure that the required packages are installed by running the following command: 
+```
+pip install -r requirements.txt
+```
+
+Make migrations and then migrate in order to create a database, by running the following commands: 
+```
+python3 manage.py makemigrations and python3 manage.py migrate
+```
+
+Load the fixtures from the 'product_types.json' file and then from the 'products.json' file - which are contained in the 'fixtures' folder into the database. This is done by using the following command:
+```
+  python3 manage.py loaddata <file name> 
+```
+
+Create a superuser with the following command:
+```
+python3 manage.py createsuperuser
+```
+and enter your credentials
+
+Run the site by entering the following command:
+```
+python3 manage.py runserver
+```
 
 [Back to Top](#table-of-contents)
 
@@ -333,57 +479,19 @@ It may take a moment for changes to appear on the hosted website.
 All content on the website was written by me, the developer, with inspiration taken from other websites. 
 A list of the websites I used for the links on my webpage below :
 
-* [Food Festival Website ](https://www.dinglefood.com/)
+* [Pc Specialist ](https://www.pcspecialist.ie/) - For the PC images
+* [MDBootstrap](https://www.mdbootstrap.com/) - For some guidleines for Bootstrap
+* [Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1) - For backup and help for my project.
+Much of this project was copied and adapted from the Code Institute 'Boutique Ado' project.
+* [Stack Overflow](https://stackoverflow.com) - Was a massive help in debugging my code.
 
-* [Distillery Website](https://dingledistillery.ie/)
-
-* [Facebook](https://facebook.com/)
-
-* [Twitter](https://twitter.com/)
-
-* [TripAdvisor](https://tripadvisor.com/)
-
-* [Instagram](https://instagram.com/)
-
-* [Oceanworld Aquarium](https://dingle-oceanworld.ie/)
-
-* [Sea Irish Adventures](https://irishadventures.net/irish-adventure-activities-dingle-killarney/activitiesseakayakingdinglecanoekerryireland.html)
-
-* [Wild Atalantic Way ](https://www.discoverireland.ie/wild-atlantic-way)
-
-* [Distillery Tours](https://dingle-distillery.appointedd.com/)
-
-* [Slea Head Drive](https://dingle-peninsula.ie/explore/slea-head-drive.html)
-
-[Back to Top](#table-of-contents)
-
-#### Code
-
-* The code throughout the project used [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/) as its base to create a
-responsive site, utilising the Bootstrap grid system.
-
-* Inspiration on how to place and style the hero images, as well as the cards used in the Top 3 Recommendations, was taken from my previous
-Milestone 1 Project.
-
-* Tutor support provided me with pointers and curve balls that helped me within the maps.js file to get started with my markers and understand how
-best to implement my code.
-
-* The code for the EmailJS was a mixture of using the documentation found on the website, following the CI tutorial videos on EmailJS, and my own
-knowledge and practice put into place.
-
-* The navbar-opacity-on-scroll code and the back-to-top button code was found on 'Codepen', and then tailored to my sites needs.
-
-* The YouTube video embedded on the home page was taken from YouTube using the import from the share screen, and the iframe tag inserted. I want to
-highlight that this video is being used for training purposes, and does not infringe copyright or ownership of the video.
-
-* All other code was written by me, the developer.
 
 #### Media
 
-The images used on the website were taken from the listed image librarie:
-I used all 1920 x 1080 aspect ratio images for consistency across the pages 
-* [Google Images](https://google.com)
+The images used on the website were taken from PC Specialist site.
+Here is an image stating I got permission to use these images.
 
+![](media/pcsp.PNG) 
 
 The logo image was created and exported to my computer using the site [Free Logo Design ](https://www.freelogodesign.org/)
 
@@ -394,10 +502,6 @@ The favicon image was created and exported to my computer using the site [Free L
 [Back to Top](#table-of-contents)
 ## **Acknowledgements**
 
-
-#### Pages used for inspiration
-
-* [Dingle Wikipedia](https://en.wikipedia.org/wiki/Dingle)
 
 #### Pages used for information
 
@@ -417,13 +521,11 @@ The favicon image was created and exported to my computer using the site [Free L
 
 #### Special thanks
 
-* Seun Owonikoko @seun_mentor, my mentor, for the support and guidance she gave thoughout the build of this project.
-* Antonio Rodriguez, my temporary mentor while Seun is on leave.
+*  Antonio Rodriguez my mentor, for the support and guidance he gave thoughout the build of this project and for taking my calls when needed.
 
-* Tutor Support at Code Institute for accepting my request for more time and giving me the initial push that really got me going. 
-All of the tutors that helped me especially Miklos who helped my understand Maps API, Eamonn Smyth for also helping me with Google Maps API and also Miklos, the tutor who helped me with the Map Markers.
+* Tutor Support at Code Institute for really helping me with the issues I had, especially Sean, he drastically helped me.
 
-I would like to especially thank Alexander from Code Institue student care for giving me a pep-talk when I felt like giving up halfway through this project. 
+I would like to especially thank Neil from Code Institue student care for giving me a slight deadline extension.
 If you so happen to read this, I am forever grateful for that chat.
 
 * Code Institute for the informative lessons and teachings they provided.
@@ -431,12 +533,10 @@ If you so happen to read this, I am forever grateful for that chat.
 [Back to Top](#table-of-contents)
 
 ##### Side Note
-- I encountered an Issue with my Google Map, where the marker content woild stay on the 1 marker, and also would not close. 
-I worked on this for a while with a tutor, and we worked on it for a while but I could not figure out where the problem was. 
-I came to terms with it, and due to the time I had left I wouldnt have been able to keep working on itso unfortunately I had to go on without it.
+- I know there is quite a lack of testing, and quite a lack of my own personal touch but this project was extremeely challenging mentally and psysicaly. Imposter Syndrome got the better of me most days which is not ideal but I still managed to get it done. 
 
 
 ## Disclaimer
 
-This project was created for educational use only. It has been part of studying at the Code Institute as part of their Full Stack Web Developer
-Course.--
+This project was created for educational use only. It has been part of studying at the Code Institute as part of their Full Stack Software Developer
+Course.
